@@ -21,8 +21,12 @@ This will output `dist/main.js`.
 
 ## How to Run
 
-Once you have built the app, you can load it from `dist/index.html` (via a local web server). 
+Run:
 
-You should now be able to see a spinning cube.
+```
+npm run serve
+```
+
+Open `http://localhost:5000/` in your browser of choice. You should see a spinning cube:
 
 ![](images/box.gif)
