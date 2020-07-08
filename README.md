@@ -11,4 +11,10 @@ npm install
 npm run build
 ```
 
-This will output `dist/main.js`. You can now load `dist/index.html` (via a local web server). You should now be able to see a spinning cube.
+This will output `dist/main.js`.
+
+## How to Run
+
+Once you have built the app, you can load it from `dist/index.html` (via a local web server). 
+
+You should now be able to see a spinning cube.
