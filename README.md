@@ -17,7 +17,7 @@ npm install
 npm run build
 ```
 
-This will output `dist/main.js`.
+This will output the built PlayCanvas app to the `dist` folder.
 
 ## How to Run
 
