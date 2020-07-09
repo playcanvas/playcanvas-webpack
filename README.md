@@ -1,4 +1,4 @@
-# Using Webpack to Build a PlayCanvas App
+# PlayCanvas Webpack Template
 
 There are lots of options for building a PlayCanvas app. One is to use [Webpack](https://webpack.js.org/), a popular JavaScript bundler.
 
