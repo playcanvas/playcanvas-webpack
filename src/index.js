@@ -1,3 +1,5 @@
+import './style.css';
+
 import * as pc from 'playcanvas';
 
 // create a PlayCanvas application

@@ -1,12 +1,21 @@
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  optimization: {
-    minimize: true
-  }
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            favicon: 'src/favicon.png',
+            meta: {
+                'viewport': 'width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1'
+            },
+            title: 'PlayCanvas Webpack Example'
+        })
+    ]
 };
