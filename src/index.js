@@ -15,11 +15,18 @@ app.setCanvasResolution(pc.RESOLUTION_AUTO);
 // ensure canvas is resized when window changes size
 window.addEventListener('resize', () => app.resizeCanvas());
 
+const Rotate = pc.createScript('rotate');
+Rotate.prototype.update = function (dt) {
+    this.entity.rotate(10 * dt, 20 * dt, 30 * dt);
+};
+
 // create box entity
 const box = new pc.Entity('cube');
 box.addComponent('model', {
     type: 'box'
 });
+box.addComponent('script');
+box.script.create('rotate');
 app.root.addChild(box);
 
 // create camera entity
@@ -35,8 +42,5 @@ const light = new pc.Entity('light');
 light.addComponent('light');
 app.root.addChild(light);
 light.setEulerAngles(45, 0, 0);
-
-// rotate the box according to the delta time since the last frame
-app.on('update', dt => box.rotate(10 * dt, 20 * dt, 30 * dt));
 
 app.start();
