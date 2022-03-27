@@ -24,7 +24,7 @@ This will output the built PlayCanvas app to the `dist` folder.
 Run:
 
 ```
-npm run serve
+npm run dev
 ```
 
 Open `http://localhost:5000/` in your browser of choice. You should see a spinning cube:
